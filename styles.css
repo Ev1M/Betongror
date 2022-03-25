@@ -1,0 +1,37 @@
+.container {  display: grid;
+    grid-template-columns: 0.9fr 1.2fr 0.9fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Tittel ."
+      ". Form ."
+      ". . .";
+  }
+  
+  .Form {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 50px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Ytre-Dia"
+      "Indre-Dia"
+      "Lengde"
+      "Submit";
+    grid-area: Form;
+  }
+
+  input{
+      padding: 20px;
+  }
+  
+  .Ytre-Dia { grid-area: Ytre-Dia; }
+  
+  .Indre-Dia { grid-area: Indre-Dia; }
+  
+  .Lengde { grid-area: Lengde; }
+  
+  .Tittel { grid-area: Tittel; }
+  
+  .Submit { grid-area: Submit; }
